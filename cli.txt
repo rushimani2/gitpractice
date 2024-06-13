@@ -1,0 +1,7 @@
+aws ec2 run_instances --image_id='ami-aabckhd3344' --instance_type='t2.micro' --min_count=3 --max_count=6 --keyname='linuxkeypair' --security_groupids='sg-ffdutu4453' --subnet_id='sub-445334'
+
+aws s3 mb s3://rushibucket12
+
+aws s3 rb s3://rushibucket12
+
+aws ec2 terminate_instances --instance_ids='i-gddgiwwee777'
