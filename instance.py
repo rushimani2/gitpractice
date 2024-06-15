@@ -32,4 +32,11 @@ ec2=boto2.resource('ec2')
 instances=ec2.reboot_instances(
         InstanceId='i-ddfgdsd33434'
 >>>>>>> master
-        )
+        
+
+
+aws ec2 run_instances --image_id="i-jjdkd3434" --instance_type="t2.micro" --min_count="3" --max_count="4" --key_name="linux key pair" --security_group_ids="sg-ssdjd422r5" --subnet_id="sub-3343dgdds"
+
+aws s3 mb s3://rushimanikanta bucket1
+
+aws s3 rb s3://rushimanikanta bucket1
