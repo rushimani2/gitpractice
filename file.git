@@ -3,5 +3,9 @@ stage('scm checkout'){
 git ' https://github.com/rushimani2/gitpractice.git'
 }
 stage('docker image push')
-sh 'docker push -itd docker container name mysql'
+sh 'docker push -itd docker container name mysql
+
+stage('docker image build')
+sh 'docker build -itd nginx'
+
 }
