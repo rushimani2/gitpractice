@@ -7,4 +7,11 @@ instances=ec2.create_instances(
         MaxCount="6"
         Security_Group_Ids="sg-sggs3535"
         SubnetId="445dsgug"
+        
+    )
+
+import boto3
+resource=ec2.boto3('ec2')
+instances=ec2.stop_instances(
+        Instance_Id="i-eeettccxd353"
         )
