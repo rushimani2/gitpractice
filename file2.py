@@ -10,3 +10,9 @@ instances=ec2.create_instances(
         KeyName='Linuxmanchine'
         )
 
+
+import boto3
+ec2=resource.boto3('ec2')
+instances=ec2.stop_instances(
+        InstanceId='i-dkddasd3434'
+        )
