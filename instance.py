@@ -17,6 +17,7 @@ instances=ec2.stop_instances(
         )
 
 import boto3
+<<<<<<< HEAD
 resource=ec2.boto3('ec2')
 instances=ec2.create_instances(
         ImageId='ami-335dddfgs'
@@ -26,4 +27,9 @@ instances=ec2.create_instances(
         Security_group_Id='sg-4454sdfggs'
         SubnetId='sub-33sgd'
         KeyName='Linuxkeypair'
+=======
+ec2=boto2.resource('ec2')
+instances=ec2.reboot_instances(
+        InstanceId='i-ddfgdsd33434'
+>>>>>>> master
         )
