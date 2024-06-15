@@ -15,3 +15,15 @@ resource=ec2.boto3('ec2')
 instances=ec2.stop_instances(
         Instance_Id="i-eeettccxd353"
         )
+
+import boto3
+resource=ec2.boto3('ec2')
+instances=ec2.create_instances(
+        ImageId='ami-335dddfgs'
+        InstanceType='t2.micro'
+        MinCount='3'
+        MaxCount='5'
+        Security_group_Id='sg-4454sdfggs'
+        SubnetId='sub-33sgd'
+        KeyName='Linuxkeypair'
+        )
